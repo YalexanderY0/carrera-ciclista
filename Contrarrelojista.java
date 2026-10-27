@@ -18,4 +18,10 @@ public class Contrarrelojista extends Ciclista {
     public void setVelocidadMaxima(double velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Velocidad máxima: " + velocidadMaxima + " km/h");
+    }
 }

@@ -28,4 +28,11 @@ public class Escalador extends Ciclista {
     public void setGradoRampa(float gradoRampa) {
         this.gradoRampa = gradoRampa;
     }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Aceleración en subida: " + aceleracionSubida + " m/s2");
+        System.out.println("Grado de rampa soportada: " + gradoRampa + " grados");
+    }
 }

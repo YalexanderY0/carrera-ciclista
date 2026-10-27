@@ -28,4 +28,11 @@ public class Velocista extends Ciclista {
     public void setVelocidadSprint(double velocidadSprint) {
         this.velocidadSprint = velocidadSprint;
     }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Potencia promedio: " + potenciaPromedio + " vatios");
+        System.out.println("Velocidad en sprint: " + velocidadSprint + " Km/h");
+    }
 }
